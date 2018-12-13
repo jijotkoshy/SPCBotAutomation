@@ -10,9 +10,9 @@ print(port)
 @app.route('/', methods=['GET'])
 def index():
   # FETCH THE View Name
-  view_name = 'Software%20Change'
+  view_name = 'Software Change'
   # FETCH job details
-  getURL = r"http://spc-jenkins.mo.sap.corp/view/"+view_name+"/api/json?tree=jobs[name]"
+  getURL = r"https://spc-jenkins.mo.sap.corp/view/"+view_name+"/api/json?tree=jobs[name]"
   print(getURL)
   r = requests.get(getURL)
   #http://mo-4fa780a4e:8080/view/Software%20Change/api/json?pretty=true&tree=jobs[name,color] jijo
