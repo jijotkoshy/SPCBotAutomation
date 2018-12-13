@@ -7,7 +7,7 @@ app = Flask(__name__)
 port = int(os.environ["PORT"])
 print(port)
 
-@app.route('/', methods=['GET'])
+@app.route('/jobstatus', methods=['GET'])
 def index():
   # FETCH THE View Name
   view_name = 'Software Change'
