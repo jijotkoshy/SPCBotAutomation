@@ -1,0 +1,15 @@
+{
+  "name": "SPCBot Automation",
+  "description": "Ther server side of SPC Bot Automation",
+  "image": "heroku/python",
+  "repository": "https://github.com/jijotkoshy/SPCBotAutomation.git",
+  "keywords": ["python", "flask" ],
+  "addons": [ "heroku-postgresql" ],
+  "environments": {
+    "test": {
+      "scripts": {
+        "test": "server.py test"
+      }
+    }
+  }
+}
